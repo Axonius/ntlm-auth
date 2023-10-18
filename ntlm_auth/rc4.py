@@ -60,5 +60,5 @@ class _PythonARC4(object):
                 self.state[self.j], self.state[self.i]
             yield self.state[(self.state[self.i] + self.state[self.j]) % 256]
 
-# We want to use python implementation of RC4 because in OpenSSL 3, RC4 is deprecated.
+# We want to use python implementation of RC4 because with OpenSSL 3, RC4 is deprecated.
 ARC4 = _PythonARC4
